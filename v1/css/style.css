@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Itim&display=swap");
+/*@mixin nav {
+  width: 100%;
+  margin: 20px auto;
+  background-color: #154360;
+  ul {
+    list-style: none;
+  }
+}
+@mixin menu {
+  li{
+    position: relative;
+    display: inline-block;
+    a{
+      display: block;
+      padding: 15px 20px;
+      color: #353535;
+      font-family: 'Concert One', cursive;
+      text-decoration: none;
+      color: white;
+    }
+    a:hover{
+      color: red;
+      transition: all .3s;
+    }
+  }
+}
+@mixin submenu {
+  position: absolute;
+  background: #333333;
+	visibility: hidden;
+	opacity: 0;
+  transition: opacity 1.5s;
+  li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Concert One', cursive;
+    text-decoration: none;
+  }
+}
+@mixin showsubmenu {
+  visibility: visible;
+  opacity: 1;
+  padding-right: 30px;
+  position: absolute;
+  z-index: 1;
+}*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/fondo.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Concert One', cursive;
+  font-family: 'Itim', cursive;
+  color: white;
+}
+
+header {
+  width: 98vw;
+}
+
+main {
+  width: 70vw;
+  height: auto;
+  background-color: #154360;
+}
+
+section div div p b {
+  color: red;
+}
+
+section div ul li b {
+  color: red;
+}
+
+legend {
+  color: red;
+}
+
+aside {
+  width: 20vw;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  background-color: #154360;
+}
+
+aside div {
+  text-align: center;
+}
+
+aside div a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+aside div a:hover {
+  color: red;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+footer {
+  margin: 5px;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 98vw;
+  height: 6vh;
+  background-color: #154360;
+  font-family: 'Concert One', cursive;
+  border-radius: 4px;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  color: black;
+}
+
+table caption {
+  color: black;
+  background-color: purple;
+  border: 1px solid black;
+  border-bottom: 0px;
+  font-weight: bold;
+}
+
+tr, td, th {
+  border: 1px solid;
+}
+
+th {
+  background-color: purple;
+}
+
+td {
+  background-color: violet;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Concert One', cursive;
+  color: red;
+  background-color: #154360;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(#154360), to(black));
+  background-image: linear-gradient(black, #154360, black);
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Concert One', cursive;
+  color: black;
+}
+
+nav {
+  width: 100%;
+  margin: 20px auto;
+  background-color: #154360;
+  position: relative;
+  border-radius: 4px;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0px;
+}
+
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li a {
+  padding: 15px 20px;
+  color: #353535;
+  font-family: "Concert One", cursive;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: red;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+nav ul li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  position: absolute;
+  text-align: center;
+}
+
+nav ul li ul {
+  position: absolute;
+  top: 100%;
+  background: #333333;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 1.5s;
+  transition: opacity 1.5s;
+}
+
+nav ul li ul li a {
+  color: #fff;
+  font-family: "Concert One", cursive;
+  text-decoration: none;
+}
+
+nav ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+main h1, main div {
+  border-radius: 4px;
+}
+
+.wrapper {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.personatges1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.personatges2 {
+  width: 30vw;
+}
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+/*# sourceMappingURL=style.css.map */

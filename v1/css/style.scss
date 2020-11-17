@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Itim&display=swap');
+@mixin nav {
+  width: 100%;
+  margin: 20px auto;
+  background-color: #154360;
+  position: relative;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 0px;
+  }
+}
+@mixin menu {
+  li {
+    display: flex;
+    a {
+      padding: 15px 20px;
+      color: #353535;
+      font-family: "Concert One", cursive;
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      color: red;
+      transition: all 0.3s;
+    }
+    ul {
+      display: flex;
+      flex-flow: column wrap;
+      position: absolute;
+      text-align: center;
+    }
+  }
+}
+@mixin submenu {
+  position: absolute;
+  top: 100%;
+  background: #333333;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+  li a {
+    color: #fff;
+    font-family: "Concert One", cursive;
+    text-decoration: none;
+  }
+}
+@mixin showsubmenu {
+  visibility: visible;
+  opacity: 1;
+}
+/*@mixin nav {
+  width: 100%;
+  margin: 20px auto;
+  background-color: #154360;
+  ul {
+    list-style: none;
+  }
+}
+@mixin menu {
+  li{
+    position: relative;
+    display: inline-block;
+    a{
+      display: block;
+      padding: 15px 20px;
+      color: #353535;
+      font-family: 'Concert One', cursive;
+      text-decoration: none;
+      color: white;
+    }
+    a:hover{
+      color: red;
+      transition: all .3s;
+    }
+  }
+}
+@mixin submenu {
+  position: absolute;
+  background: #333333;
+	visibility: hidden;
+	opacity: 0;
+  transition: opacity 1.5s;
+  li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Concert One', cursive;
+    text-decoration: none;
+  }
+}
+@mixin showsubmenu {
+  visibility: visible;
+  opacity: 1;
+  padding-right: 30px;
+  position: absolute;
+  z-index: 1;
+}*/
+@mixin border {
+  border-radius: 4px;
+}
+@mixin aside {
+  div {
+    text-align: center;
+    a{
+      text-decoration: none;
+      color: white;
+      text-align: center;
+    }
+    a:hover {
+      color: red;
+      transition: all .3s;
+    }
+  }
+}
+@mixin red {
+  div {
+    p {
+      b{
+        color: red;
+      }
+    }
+  }
+  ul {
+    li{
+      b{
+        color: red;
+      }
+    }
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../img/fondo.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Concert One', cursive;
+  font-family: 'Itim', cursive;
+  color: white;
+}
+header {
+  width: 98vw;
+}
+main {
+  width: 70vw;
+  height: auto;
+  background-color: #154360;
+}
+section {
+  div{
+    @include red();
+  }
+}
+legend {
+  color: red;
+}
+aside {
+  width: 20vw;
+  align-content: stretch;
+  background-color: #154360;
+  @include aside();
+}
+footer {
+  margin: 5px;
+  clear: both;
+  display: flex;
+  align-items: center;
+  width: 98vw;
+  height: 6vh;
+  background-color: #154360;
+  font-family: 'Concert One', cursive;
+  @include border();
+  color: white;
+}
+table {
+  border-collapse: collapse;
+  margin: auto;
+  color: black;
+  caption {
+    color: black;
+    background-color:purple;
+    border: 1px solid black;
+    border-bottom: 0px;
+    font-weight: bold;
+  }
+}
+tr,td,th {
+  border: 1px solid;
+}
+th {
+  background-color: purple;
+}
+td {
+  background-color: violet;
+}
+h1 {
+  text-align: center;
+  font-family: 'Concert One', cursive;
+  color: red;
+  background-color: #154360;
+  background-image: linear-gradient(black,#154360, black);
+}
+h3 {
+  text-align: center;
+  font-family: 'Concert One', cursive;
+  color: black;
+}
+nav {
+  @include nav();
+  @include border;
+}
+nav ul {
+  @include menu();
+}
+nav ul li ul {
+  @include submenu();
+}
+nav ul li:hover ul {
+  @include showsubmenu();
+}
+main h1, main div{
+  @include border();
+}
+.wrapper {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.personatges1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.personatges2 {
+  width: 30vw;
+}
+.media {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-flow: row;
+}
