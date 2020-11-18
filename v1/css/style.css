@@ -10,7 +10,7 @@ body {
   background-image: url("../img/fondo.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
   font-family: 'Concert One', cursive;
   font-family: 'Itim', cursive;
@@ -22,7 +22,7 @@ header {
 }
 
 main {
-  width: 70vw;
+  width: 65vw;
   height: auto;
   background-color: #154360;
 }
@@ -71,7 +71,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 98vw;
+  width: 97vw;
   height: 6vh;
   background-color: #154360;
   font-family: 'Concert One', cursive;
@@ -181,7 +181,7 @@ main h1, main div {
 }
 
 .wrapper {
-  width: 100vw;
+  width: 98vw;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
