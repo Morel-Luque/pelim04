@@ -64,7 +64,6 @@ aside div a:hover {
 
 footer {
   margin: 5px;
-  clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,6 +128,7 @@ nav {
 
 nav ul {
   list-style: none;
+  text-align: center;
 }
 
 nav ul li {
