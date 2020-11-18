@@ -43,9 +43,9 @@
   17. text-align: center;
   18. box-sizing: border-box;
   19. background-attachement: fixed;
-  20. background-repeat: no-repeat
+  20. background-repeat: no-repeat;
   21. align-content: stretch;
-  22. clear: both
+  22. clear: both;
   23. border: 1px solid black;
   24. font-weight: bold;
   25. border-bottom: 0px;
