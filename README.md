@@ -4,9 +4,10 @@
 
   - En aquesta part vaig haver de crear una pàgina HTML desde 0 i com no es podia posar estils, ha quedat com ha quedat... :+1:
 
-- [x] [Enllaç a la Part1 (HTML & CSS) de la pràctica](https://morelluque.github.io/pelim04/v1/)
+- [x] [Enllaç a la Part1 (HTML & CSS (SASS)) de la pràctica](https://morelluque.github.io/pelim04/v1/)
 
-  - En aquesta part vaig haver d'agafar la pàgina HTML creada anteriorment, solucionar els errors comesos i per fi aplicar estils. :+1:
+  - En aquesta part vaig haver d'agafar la pàgina HTML creada anteriorment, solucionar els errors comesos i per fi aplicar estils 
+    utilizant el compilador SASS. :+1:
 
 - [x] [Enllaç a la Part2.1 (Només responsive template) de la pràctica](https://morelluque.github.io/pelim04/v2/v2.1/)
 
@@ -19,8 +20,6 @@
 - [x] [Enllac a la Part3 (Boostrap) de la pràctica](https://morelluque.github.io/pelim04/v3/)
 
   - En aquesta part vaig haver de crear una plantilla Boostrap amb la web: [Froala](https://froala.com/pages/demo/) i implementar i adaptar el meu codi HTML :+1:
-  
-**CAL DESTACAR QUE S'HA UTILITZAT EL MATEIX CODI HTML PER TOTES LES PARTS**
 
 ## LLISTAT DE PROPIETATS
 
